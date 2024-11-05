@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VPN Генератор Ключей</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container" id="contentContainer">
+        <!-- Логотип -->
+        <img src="logo_errcha.png" alt="ERRCHA Logo" class="main-logo">
+
+        <!-- Флаг выбранной страны (по умолчанию скрыт) -->
+        <div class="selected-flag-container">
+            <img src="" alt="Selected Country Flag" id="selectedFlag" class="selected-flag">
+        </div>
+
+        <p class="instruction">Выберите расположение сервера</p>
+
+        <!-- Флаги для выбора страны -->
+        <div class="flags">
+            <img src="swiss.png" alt="Switzerland" class="flag" onclick="selectCountry('Switzerland')">
+            <img src="canada.png" alt="Canada" class="flag" onclick="selectCountry('Canada')">
+            <img src="indonesia.png" alt="Indonesia" class="flag" onclick="selectCountry('Indonesia')">
+            <img src="norway.png" alt="Norway" class="flag" onclick="selectCountry('Norway')">
+        </div>
+
+        <!-- Поле для отображения ключа -->
+        <div class="output" id="output">Выберите страну и нажмите "Сгенерировать"</div>
+
+        <!-- Кнопка генерации ключа -->
+        <button id="generateButton" onclick="generateKey()">СГЕНЕРИРОВАТЬ</button>
+    </div>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
