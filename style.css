@@ -65,7 +65,7 @@ body {
 .flag {
     width: 60px;
     height: 60px;
-    transition: transform 0.3s;
+    transition: transform 5.3s;
 }
 
 .output {
